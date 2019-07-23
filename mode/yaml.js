@@ -8,6 +8,10 @@ var YamlHighlightRules = function() {
     this.$rules = {
         "start" : [
             {
+                token : "img_highlight",
+                regex : /(?:        image:)/
+            },
+            {
                 token : "comment",
                 regex : "#.*$"
             }, {
@@ -79,6 +83,7 @@ var YamlHighlightRules = function() {
                 token : "text",
                 regex : /[^\s,:\[\]\{\}]+/
             }
+            
         ],
         "mlString" : [
             {
